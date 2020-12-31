@@ -3,61 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" -->
-    <link rel="stylesheet" href="css/bootstrap.min.lux.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- link rel="stylesheet" href="css/bootstrap.min.lux.css" -->
+    <link rel="stylesheet" href="css/theme-1.css">
     <title>Inicio</title>
 
     <style>
         
-        .jumbotron{
-            background-image: url(res/abstract-background-with-low-poly-design.jpg);
+        .header{
+            padding: 2em;
         }
 
-        .jumbotron{
+        .promo-content{
             color: wheat;
         }
 
-        .headline{
-            color: wheat;
+        #primer-article{
+            margin-top: 15px;
         }
 
+        .card-img-top{
+            margin: 2px;
+            width: 100%;
+            height: 70%;
+            border-radius: 15px;
+        }
+        
+        #video{
+            width: 100%;
+            height: 600px;
+        }
+
+        .form-contact{
+            margin-left: 25px;
+        }
+        
 
     </style>
 </head>
 <body>
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">More</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<header id="header" class="header">  
+    <div class="container">      
+        <h1 class="logo"><a href="index.html"><span class="text">Home</span></a></h1>
+        <nav class="main-nav navbar navbar-right navbar-expand-md">     
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+            </button>
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="stories.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">More</a></li>
+                </ul>
+            </div>
+        </nav>                    
+    </div>
+</header> 
 
     
-    <div class="jumbotron">
+<section class="promo-section section section-on-bg">
+    <div class="hero-slider-wrapper">
+        
+    <div class="hero-slider-mask"></div>
+    </div>
+
+    <div class="container promo-content">
+                    
         <h2 class="headline">Welcome to my site</h2>
         <p class="tagline">Web, desktop and management solutions for your small, medium and big business</p>
-        <hr class="my-4">
-        <p class="tagline">It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-outline-primary btn-lg" href="#" role="button">Learn more</a>
+        <div class="actions">
+            <a class="btn btn-outline-success" href="#" data-toggle="modal" data-target="#signup-modal">Check our software solutions</a>
+        </div>
     </div>
+</section>
+
+<br />
+<br />
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Fluid jumbotron</h1>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+  </div>
+
+<br />
+<br />
+
+<br />
+<br />
+
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-lg-5 col-sm-12 col-xl-5">
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <svg class="bd-placeholder-img" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <svg class="bd-placeholder-img" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-md-5 col-lg-5 col-sm-12 col-xl-5 form-contact">
+                <form class="form-group" method="post" action="">
+                    <h4>Need more information?</h4>
+                    <label for="nombre">Name:</label>
+                    <input type="text" name="nombre" placeholder="Enter your full name" class="form-control" required />
+                    <br />
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Enter your email" class="form-control" required />
+                    <br />
+
+                    <label for="seccion">Topic:</label>
+                    <select name="seccion" class="form-control">
+                        <option value="Information">Information</option>
+                        <option value="Legals">Legals</option>
+                        <option value="Work-with-us">Work with us</option>
+                        <option value="Contracts">Management</option>
+                        <option value="Billing">Billing</option>
+                    </select>
+                    <br />
+
+                    <label for="phone">Phone number</label>
+                    <input type="number" name="phone" placeholder="Enter your phone number - area code included" class="form-control" required />
+                    <br />
+
+                    <button type="submit" class="btn btn-outline-success">Send</button>
+                    <button type="reset" class="btn btn-outline-danger">Clean fields</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</article>
+
+<br />
+<br />
+
+<br />
+<br />
+
+<footer>
+    <hr>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-12">
+                    <h3 class="text-center">Quienes somos</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ducimus, sit, quibusdam quidem recusandae veniam eos quod error nisi repellat excepturi laboriosam aspernatur suscipit possimus consectetur dolores nihil labore quas eius illo accusamus nulla sed blanditiis porro accusantium. Perspiciatis, perferendis!</p>
+                </div>
+                <div class="col-md-6 col-lg-6 col-12">
+                    <h3 class="text-center">Contactar</h3>
+                    <address class="text-center">
+                    <strong>MyCompany, Inc.</strong><br>
+                    Sunny Autumn Plaza, Grand Coulee,<br>
+                    CA, 91308-4075, US<br>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p>Copyright © MyCompany. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
     
 
